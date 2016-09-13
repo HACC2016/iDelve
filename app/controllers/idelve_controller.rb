@@ -4,6 +4,19 @@ class IdelveController < ApplicationController
   def new
   end
 
-  def show
+  def home
   end
+
+  def list_of_twenty
+  end
+
+  def iam
+  end
+
+  def iwish
+  end
+
+  def iconnect
+  end
+
 end
