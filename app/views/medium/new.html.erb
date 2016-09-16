@@ -1,0 +1,7 @@
+<%= form_for @medium, url: '/medium/create', html: {multipart: true} do |form|%>
+
+  <%= form.file_field :data %>
+
+  <%= form.submit %>
+
+<% end %>
