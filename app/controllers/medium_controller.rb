@@ -1,11 +1,16 @@
 class MediumController < ApplicationController
   def create
     @medium = Medium.create( medium_params )
-    @medium.data = params[:medium][:data]
+
+    @medium.user_id = current_user.id
+    @medium.save!
+
+    current_user.lastupload = @medium.id
+    current_user.save!
   end
 
   def new
-    @medium = Medium.new(  )
+    @medium = Medium.new
   end
 
   private
