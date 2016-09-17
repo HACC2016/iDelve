@@ -1,0 +1,11 @@
+<h1> My Skills</h1>
+
+<%= link_to "Add", skill_add_url %>
+
+<ul>
+<%= @skills.each do |item| %>
+<li>
+  <%=item.description %>
+</li>
+<% end %>
+</ul>
