@@ -1,11 +1,15 @@
 <h1> My Skills</h1>
 
-<%= link_to "Add", skill_add_url %>
+<%= link_to "Add a new skill", skill_add_url %>
 
+<% if @skills.blank? %>
+<p>Nothing yet</p>
+<% else %>
 <ul>
-<%= @skills.each do |item| %>
-<li>
-  <%=item.description %>
-</li>
-<% end %>
+  <%= @skills.each do |item| %>
+  <li>
+     <%=item.description %> (<%=item.id %>)
+  </li>
+  <% end %>
 </ul>
+<% end %>
