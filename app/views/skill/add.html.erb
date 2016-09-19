@@ -2,16 +2,22 @@
 
 <%= form_for @skill, url: '/skill/create' do %>
 
-<p>
-<%= label_tag(:description, "Description") %>
-<%= text_field_tag(:description ) %>
-</p>
 
 <p>
 <%= check_box_tag(:use_last_upload) %>
 <%= label_tag(:use_last_upload, "Use last uploaded media:") %>
 <%= Medium.find(current_user.lastupload).inspect  %>
 </p>
+
+<p>
+  <%= link_to "Upload New Media", medium_new_url %>
+</p>
+
+<p>
+  <%= label_tag(:description, "Description") %>
+  <%= text_field_tag(:description ) %>
+</p>
+
 
 <%= submit_tag %>
 <% end %>
