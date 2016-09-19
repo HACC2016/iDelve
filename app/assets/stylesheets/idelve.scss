@@ -1,3 +1,37 @@
-// Place all the styles related to the idelve controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: BaconSans;
+  src: asset-url("assets/BaconSans.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: BaconSans, sans-serif;
+  font-weight: bold;
+}
+
+.app-title {
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.login-section {
+
+  label {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  input#user_password, input#user_email {
+    width: 100%;
+  }
+  .actions {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    input {
+      width: 100%;
+    }
+  }
+}
