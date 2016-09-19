@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'skill/list'
   get 'skill/add'
   post 'skill/create'
+  get 'skill/show_resume'
 
   get 'medium/new'
   post 'medium/create'
