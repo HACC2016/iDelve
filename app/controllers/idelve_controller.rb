@@ -9,7 +9,12 @@ class IdelveController < ApplicationController
   def home
   end
 
-  def list_of_twenty
+  def profile
+
+  end
+
+  def team
+
   end
 
   def iam

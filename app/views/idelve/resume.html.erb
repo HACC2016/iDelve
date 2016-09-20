@@ -1,11 +1,12 @@
 <h1 class="app-title">iDelve</h1>
-<p style="text-align: center; color: #888888; font-size: 0.5em;">
-  igniting Dignity Empathy Love Value Esteem
+<p style="text-align: center;">
+  Hello, <%=current_user.email %>!
+  (<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>)
 </p>
 <div class="buttons-box">
   <div class="round-button profile-button">
     <div class="round-button-circle">
-      <a href="<%= idelve_profile_url %>" title="About Me" class="round-button-link">&nbsp;</a>
+      <a href="<%= idelve_iam_url %>" title="About Me" class="round-button-link">&nbsp;</a>
     </div>
   </div>
   <div class="round-button team-button">
@@ -19,12 +20,8 @@
     </div>
   </div>
 </div>
-<p style="text-align: center;">
-  Hello, <%=current_user.email %>!
-  (<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>)
-</p>
 <div class="footer">
-  <a href="<%=root_path%>"><i class="fa fa-home"></i></a>
+  <i class="fa fa-home"></i>
   <i class="fa fa-share-alt"></i>
   <i class="fa fa-camera"></i>
   <i class="fa fa-cog"></i>

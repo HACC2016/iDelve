@@ -49,100 +49,58 @@ body {
   }
 }
 
-.buttons-box {
-  margin: auto;
-  width: 20em;
-  height: 20em;
-  position: relative;
-}
-
-.round-button {
-  width: 8em;
-
-  .round-button-circle {
-    width: 100%;
-    height:0;
-    padding-bottom: 100%;
-    border-radius: 50%;
-    overflow:hidden;
-    box-shadow: 0 0 3px gray;
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.1em;
+  text-align: center;
+  background-color: #1e0a39;
+  border: solid 2px #a3a3a3;
+  color: #d2ced7;
+  font-size: 2.5em;
+  i {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
   }
   a {
-    display:block;
-    float:left;
-    width:100%;
-    padding-top:50%;
-    padding-bottom:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-
-    text-align:center;
-    color:#e2eaf3;
-    font-size:1.2em;
-    font-weight:bold;
-    text-decoration:none;
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
-    background-position: center;
+    color: #d2ced7;
   }
 }
 
-.profile-button {
+.personal-info {
+  div {
+    padding: 2em 2em;
+  }
 
-  position: absolute;
-  left: 6em;
+  .i-am {
+    h2 {
+      background-image: url(asset-path("portraits.png"));
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      padding-left: 48px;
+    }
+  }
 
-  .round-button-circle {
-    background: #c8ff3c; /* For browsers that do not support gradients */
-    background: -webkit-radial-gradient(circle, #c8ff3c, #00c70f); /* Safari */
-    background: -o-radial-gradient(circle, #c8ff3c, #00c70f); /* Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(circle, #c8ff3c, #00c70f); /* Firefox 3.6 to 15 */
-    background: radial-gradient(circle, #c8ff3c, #00c70f); /* Standard syntax */
+  .i-can {
+    h2 {
+      background-image: url(asset-path("medal2.png"));
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      padding-left: 48px;
+    }
   }
-  .round-button-circle:hover {
-    background:#30588e;
-  }
-  .round-button-link {
-    background-image: url(asset-path('person.png'));
-  }
-}
 
-.team-button {
-  position: absolute;
-  left: 1.5em;
-  top: 8em;
+  .i-like {
+    h2 {
+      background-image: url(asset-path("heart2.png"));
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      padding-left: 48px;
+    }
+  }
 
-  .round-button-circle {
-    background: #ff79f9; /* For browsers that do not support gradients */
-    background: -webkit-radial-gradient(circle, #ff79f9, #ff00a2); /* Safari */
-    background: -o-radial-gradient(circle, #ff79f9, #ff00a2); /* Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(circle, #ff79f9, #ff00a2); /* Firefox 3.6 to 15 */
-    background: radial-gradient(circle, #ff79f9, #ff00a2); /* Standard syntax */
-  }
-  .round-button-circle:hover {
-    background:#30588e;
-  }
-  .round-button-link {
-    background-image: url(asset-path('group2.png'));
-  }
-}
-
-.resume-button {
-  position: absolute;
-  right: 1.5em;
-  top: 8em;
-
-  .round-button-circle {
-    background: #c37ae9; /* For browsers that do not support gradients */
-    background: -webkit-radial-gradient(circle, #c37ae9, #4c28ec); /* Safari */
-    background: -o-radial-gradient(circle, #c37ae9, #4c28ec); /* Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(circle, #c37ae9, #4c28ec); /* Firefox 3.6 to 15 */
-    background: radial-gradient(circle, #c37ae9, #4c28ec); /* Standard syntax */
-  }
-  .round-button-circle:hover {
-    background:#30588e;
-  }
-  .round-button-link {
-    background-image: url(asset-path('handshake.png'));
+  ul {
   }
 }

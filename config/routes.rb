@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'idelve/iconnect'
   get 'idelve/upload'
   get 'idelve/home'
+  get 'idelve/profile'
+  get 'idelve/team'
+  get 'idelve/resume'
 
   post 'idelve/upload', to: 'idelve#do_upload'
 
