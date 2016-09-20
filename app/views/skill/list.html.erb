@@ -2,22 +2,31 @@
 <p style="text-align: center; color: #888888; font-size: 0.5em;">
   igniting Winning Organized Resume Know-how
 </p>
-<%= link_to "Add a new skill", skill_add_url %>
 
-<% if @skills.blank? %>
-<p>Nothing yet</p>
-<% else %>
-<ul>
-  <%= @skills.each do |item| %>
-  <li>
-     <%=item.description %> (<%=item.id %>)
-  </li>
-  <% end %>
-</ul>
-<% end %>
+<div class="row">
+  <div class="col-md-10 offset-md-1">
 
-<p><%= link_to "Download my resume", skill_show_resume_url, target: '_blank' %></p>
-<p><%= link_to "Home", idelve_home_url %></p>
+    <h2>My Resume</h2>
+
+    <h3></h3>
+
+    <%= link_to "Add a new skill", skill_add_url %>
+
+    <% if @skills.blank? %>
+        <p>Nothing yet</p>
+    <% else %>
+        <ul>
+          <%= @skills.each do |item| %>
+              <li>
+                <%=item.description %> (<%=item.id %>)
+              </li>
+          <% end %>
+        </ul>
+    <% end %>
+
+    <p><%= link_to "Download my resume", skill_show_resume_url, target: '_blank' %></p>
+  </div>
+</div>
 
 <div class="footer">
   <a href="<%=root_path%>"><i class="fa fa-home"></i></a>
