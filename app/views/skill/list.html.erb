@@ -1,5 +1,7 @@
-<h1> My Skills</h1>
-
+<h1 class="app-title">iWork</h1>
+<p style="text-align: center; color: #888888; font-size: 0.5em;">
+  igniting Winning Organized Resume Know-how
+</p>
 <%= link_to "Add a new skill", skill_add_url %>
 
 <% if @skills.blank? %>
@@ -16,3 +18,11 @@
 
 <p><%= link_to "Download my resume", skill_show_resume_url, target: '_blank' %></p>
 <p><%= link_to "Home", idelve_home_url %></p>
+
+<div class="footer">
+  <a href="<%=root_path%>"><i class="fa fa-home"></i></a>
+  <i class="fa fa-share-alt"></i>
+  <i class="fa fa-camera"></i>
+  <i class="fa fa-cog"></i>
+  <i class="fa fa-graduation-cap"></i>
+</div>
