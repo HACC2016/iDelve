@@ -14,6 +14,7 @@ body {
   background: -o-linear-gradient(bottom right, #fffff1, #e6faff); /* Opera 11.6 to 12.0 */
   background: -moz-linear-gradient(bottom right, #fffff1, #e6faff); /* Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #fffff1, #e6faff); /* Standard syntax */
+  background-repeat: no-repeat;
 }
 
 .alert, .notice {
@@ -102,7 +103,7 @@ body {
     background:#30588e;
   }
   .round-button-link {
-    background-image: url('person.png');
+    background-image: url(asset-path('person.png'));
   }
 }
 
@@ -122,7 +123,7 @@ body {
     background:#30588e;
   }
   .round-button-link {
-    background-image: url('group2.png');
+    background-image: url(asset-path('group2.png'));
   }
 }
 
@@ -142,6 +143,6 @@ body {
     background:#30588e;
   }
   .round-button-link {
-    background-image: url('handshake.png');
+    background-image: url(asset-path('handshake.png'));
   }
 }
