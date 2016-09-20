@@ -1,5 +1,25 @@
-<h1>iDelve Home</h1>
-<p>Hello, <%=current_user.email %>!</p>
+<h1 class="app-title">iDelve</h1>
+<p>
+  Hello, <%=current_user.email %>!
+  (<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>)
+</p>
+<div class="buttons-box">
+  <div class="round-button profile-button">
+    <div class="round-button-circle">
+      <a href="http://www.google.com" title="About Me" class="round-button-link">&nbsp;</a>
+    </div>
+  </div>
+  <div class="round-button team-button">
+    <div class="round-button-circle">
+      <a href="http://www.google.com" title="My Team" class="round-button-link">&nbsp;</a>
+    </div>
+  </div>
+  <div class="round-button resume-button">
+    <div class="round-button-circle">
+      <a href="<%= skill_list_url %>" title="My Resume" class="round-button-link">&nbsp;</a>
+    </div>
+  </div>
+</div>
 
 <ul>
   <li>
@@ -12,15 +32,5 @@
 
   <li>
     <%= link_to "iConnect", idelve_iconnect_url %>
-  </li>
-
-  <li>
-    <%= link_to "My Skills (Visual Resume)", skill_list_url %>
-  </li>
-
-
-
-  <li>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
   </li>
 </ul>
