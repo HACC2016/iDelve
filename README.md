@@ -5,6 +5,8 @@
 Our team has created this web app to submit for the 2016 Hawaii Annual Code
 Challenge.
 
+See our submission on Devpost: http://devpost.com/software/idelve
+
 ## Team members
 
 * Ariana Stugard
