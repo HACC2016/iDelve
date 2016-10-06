@@ -13,3 +13,10 @@ Challenge.
 * Ruby Menon
 * Ryan Kanno
 * Russ Tokuyama
+
+## Credits
+
+### Icons
+
+* https://www.iconfinder.com/iconsets/freeline by Enes Dal
+* https://www.iconfinder.com/iconsets/windows-8-metro-style by Visual Pharm (http://icons8.com/)
